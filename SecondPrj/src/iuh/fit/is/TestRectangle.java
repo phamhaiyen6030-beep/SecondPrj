@@ -16,11 +16,11 @@ public class TestRectangle {
 		Scanner sc = new Scanner (System.in);
 		System.out.print("Enter Width = ");
 		double width=sc.nextDouble();
-		System.out.print("Enter Height = ");
-		double height =sc.nextDouble();
-		Rectangle rectangle = new Rectangle(width,height);
+		System.out.print("Enter Length = ");
+		double length =sc.nextDouble();
+		Rectangle rectangle = new Rectangle(width,length);
 		
-		String headerline = String.format("%s\t%s\t%s\t%s\t", "Width","Height","Area","Perimeter");
+		String headerline = String.format("%s\t%s\t%s\t%s\t", "Width","Length","Area","Perimeter");
 		System.out.println(headerline);
 		System.out.println(rectangle);
 	}

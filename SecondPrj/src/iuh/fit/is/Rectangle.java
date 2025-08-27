@@ -11,52 +11,52 @@ package iuh.fit.is;
 public class Rectangle {
 	
 	private double width;
-	private double height;
+	private double length ;
 	
 	public Rectangle() {
 	}
 	
-	public Rectangle(double width, double height) {
+	public Rectangle(double width, double length) {
 //		this.width=width;
 //		this.height=height;
 		setWidth(width);   // kiểm tra ở setter
-        setHeight(height);
+        setLength(length);
 	}
 	
 	public double getWidth() {
 		return this.width;
 	}
 	
-	public double getHeight() {
-		return this.height ;
+	public double getLength() {
+		return this.length ;
 	}
 	
 	
 	public void setWidth(double width) {
 		if (width < 0) {
-			throw new IllegalArgumentException("Width value is not negative");
+			throw new IllegalArgumentException("Width must be greater than 0");
 		}
 		this.width = width;
 	}
 	
 	
-	public void setHeight(double height) {
-		if (height<0) {
-			throw new IllegalArgumentException("Height value is not negative");
+	public void setLength(double length) {
+		if (length<0) {
+			throw new IllegalArgumentException("Length must be greater than 0");
 		}
-		this.height = height;
+		this.length = length;
 	}
 	public double calcPerimeter() {
-		return (width + height) * 2;
+		return (width + length) * 2;
 	}
 	
 	public double calcArea() {
-		return (width * height) ;
+		return (width * length) ;
 	}
 	
 	@Override
 	public String toString() {
-		return String.format("%.2f\t%.2f\t%.2f\t%.2f", width,height,calcArea(),calcPerimeter());
+		return String.format("%.2f\t%.2f\t%.2f\t%.2f", width,length,calcArea(),calcPerimeter());
 	}
 	
 	
