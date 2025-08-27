@@ -1,6 +1,6 @@
 
 /**
- * @description This class represents a bank with many bank accounts
+ * @description This is the Rectangle description class
  * @author Pham Hai Yen
  * @version 1.0
  * @created Aug 24, 2025 1:49:21 PM
