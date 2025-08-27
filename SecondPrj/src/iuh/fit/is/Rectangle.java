@@ -9,7 +9,7 @@
 package iuh.fit.is;
 
 public class Rectangle {
-
+	
 	private double width;
 	private double height;
 	
@@ -17,8 +17,10 @@ public class Rectangle {
 	}
 	
 	public Rectangle(double width, double height) {
-		this.width=width;
-		this.height=height;
+//		this.width=width;
+//		this.height=height;
+		setWidth(width);   // kiểm tra ở setter
+        setHeight(height);
 	}
 	
 	public double getWidth() {
